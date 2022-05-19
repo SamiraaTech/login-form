@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 1rem;
+    background-color: #FAFAFA;
+}
+a {
+    color: #007CFF;
+    text-decoration: none;
+}
+#root {
+    display: flex;
+    justify-content: center;
+    padding: 10rem;
+}
+.container {
+    max-width: 48rem;
+    display: flex;
+    flex-direction: row;
+    -webkit-box-shadow: 0px 1px 6px 0px rgba(165, 165, 165, 0.66); 
+    box-shadow: 0px 1px 6px 0px rgba(165, 165, 165,0.66);
+}
+.welcome-wrapper {
+    width: 33.33%;
+    height: auto;
+    background: #007CFF;
+    color: #fff;
+    padding: 4rem 1.8rem;
+}
+.welcome-top svg {
+    max-width: 100%;
+    height: auto;
+}
+.welcome-bottom h3 {
+    padding: .7rem 0;
+}
+.welcome-txt {
+    font-size: .8rem;
+    line-height: 1rem;
+} 
+
+.login-wrapper {
+    width: 66.66%;
+    padding: 3rem 7rem;
+    background-color: #fff;
+}
+
+.inner-form h1 {
+    font-size: .9rem;
+    color: #007CFF;
+    text-align: center;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    font-size: .8rem;
+    font-weight: 600;
+}
+.form label {
+    color: #666;
+    padding: 1rem 0 .3rem ;
+}
+.form input {
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: .4rem;
+}
+.form button {
+    color: #fff;
+    border: 0px;
+    border-radius: .2rem;
+    cursor: pointer;
+}
+.form .login_btn {
+    background-color: #007CFF;
+    padding: .5rem;
+    margin-top: .6rem;
+   
+}
+.form .signup {
+    color: rgb(142, 141, 141);
+    text-align: center;
+    font-size: .7rem;
+}
+.circle_wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
+}
+.or_circle {
+    width: 1.9rem;
+    height: 1.9rem;
+    /* border: 1px solid rgb(142, 141, 141); */
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 1px 6px 0px rgba(165, 165, 165, 0.66); 
+    box-shadow: 0px 1px 6px 0px rgba(165, 165, 165,0.66);
+    text-align: center;
+    padding-top: .5rem;
+   
+}
+.or_circle span {
+    color: #666;
+}
+.social_buttons {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+.Fb_btn {
+    background-color: #4267B2;
+    padding: .5rem 2.3rem;
+    
+}
+.g_btn {
+    background-color: #DE5246;
+    padding: .5rem 2.7rem;
+}
