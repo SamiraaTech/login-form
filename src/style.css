@@ -49,6 +49,7 @@ a {
     width: 66.66%;
     padding: 3rem 7rem;
     background-color: #fff;
+    
 }
 
 .inner-form h1 {
@@ -77,11 +78,17 @@ a {
     border-radius: .2rem;
     cursor: pointer;
 }
+
 .form .login_btn {
     background-color: #007CFF;
     padding: .5rem;
     margin-top: .6rem;
    
+}
+.login_btn:disabled,
+.login_btn[disabled]{
+  background-color: #cccccc;
+  cursor: default;
 }
 .form .signup {
     color: rgb(142, 141, 141);
@@ -121,24 +128,28 @@ a {
     background-color: #DE5246;
     padding: .5rem 2.7rem;
 }
-button:disabled,
-button[disabled]{
-  background-color: #cccccc;
-}
+
 /*--------------- responsive ------------------*/
 
 @media only screen and (max-width : 1040px) {
     .social_buttons {
         display: inline-block;
     }
-}
+    .login-wrapper {
+        text-align: center;
+    }
 
+}
+@media only screen and (max-width: 1040px) and (min-width: 636px) {
+    .login-wrapper {
+        padding: 3rem;
+    }
+}
 @media only screen and (max-width: 636px) {
    .login-wrapper {
         width: 100%;
-        text-align: center;
+        
     } 
-    
 }
 @media only screen and (max-width: 636px) and (min-width: 420px) { 
     .container {
