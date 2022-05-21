@@ -1,12 +1,24 @@
 import React, { useState } from 'react';
 
-const Login = ({ handleChange }) => {
+const Login = () => {
     const [ email, setEmail ] = useState('');
     const [ password, setPassword ] = useState('');
+    // const [ disabled, setDisabled ] = useState(true);
 
     const handleSubmit = e => {
         e.preventDefault();
         console.log(`${[email]} : ${[password]}`);
+    }
+    const handleChange = e => {
+        if (String(e.target.value)
+          .toLowerCase()
+          .match(
+            /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+          )) {
+              return true
+          } else {
+              return false
+          } ;
     }
     return (
         <div className="login-wrapper">
@@ -23,7 +35,7 @@ const Login = ({ handleChange }) => {
 
                     <a href={'/'}>Forget Password?</a>
 
-                    <button className="login_btn" type="submit" value="submit" disabled={false}>Login</button>
+                    <button className="login_btn" type="submit" value="submit" onClick={handleChange}>Login</button>
                     <p className='signup'>New to our platform?
                         <a href={'/'}>Signup</a>
                     </p>
