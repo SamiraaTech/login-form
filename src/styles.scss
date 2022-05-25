@@ -7,7 +7,7 @@ $footer-color: #6573CF;
         list-style: none;
     }
     .card_wrapper {
-        width: 13.5rem;
+        width: 14rem;
         height: auto;
         background-color: #fff;
         box-shadow: 1px 8px 3px rgb(65, 64, 64);
@@ -20,13 +20,14 @@ $footer-color: #6573CF;
                 .rounded-profile {
                     position: absolute;
                     left: 50%;
+                    transform: translateX(-50%);
+                    top: 2rem;
                     bottom: 0;
-                    width: 4rem;
-                    height: 4rem;
-                    border-radius: 50%;
                     .profile-img {
-                        width: 100%;
-                        height: auto;
+                        width: 4rem;
+                        height: 4rem;
+                        border-radius: 50%;
+                        border: 3px solid #fff;
                     }
 
                 }
@@ -34,18 +35,18 @@ $footer-color: #6573CF;
         }
         
         .content_wrapper {
-            padding: 4rem 1rem;
-            
             .contact_Name {
                 text-align: center;
                 position: relative;
+                margin-top: 4rem;
                 &::after {
                     content: "";
                     display: inline-block;
                     position: absolute;
-                    left: 40%;
+                    left: 50%;
+                    transform: translateX(-50%);
                     bottom: -8px;
-                    width: 35px;
+                    width: 30px;
                     height: 1.3px;
                     background-color: #000;
     
@@ -54,7 +55,7 @@ $footer-color: #6573CF;
             
             p.contact_info {
                 font-size: .8rem;
-                padding-top: 2rem;
+                margin-top: 2rem;
                 text-align: center;
                 color: #666;
             }
@@ -62,11 +63,20 @@ $footer-color: #6573CF;
             ul.contact_us { 
                 display: flex;
                 justify-content: space-around;
-                padding-top: 2rem;
+                margin: 2rem 0 3rem;
+                padding: 0 2.3rem;
                     li {
+                        padding: 0.3rem 0.5rem;
+                        transition: all 0.5s ease;
                         svg {
                             color: $header-color;
                             width: 1.5rem;
+                        }
+                    &:hover {
+                       background-color: $header-color;
+                       svg {
+                           color:#fff;
+                        }
                     }
                 }
                 
@@ -94,7 +104,7 @@ $footer-color: #6573CF;
                 z-index: 2;
                 padding: 0.5rem 0;
                 li {
-                    padding: 0 .5rem;
+                    padding: .2rem 0.5rem 0;
                     a {
                         svg {
                             width: 1.1rem;
