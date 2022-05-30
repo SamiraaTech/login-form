@@ -1,5 +1,6 @@
 import React from 'react';
 import Filter from '../img/filter.svg';
+import Export from '../img/export.svg';
 
 const ParaphraseMain = () => {
     return (
@@ -40,7 +41,7 @@ const ParaphraseMain = () => {
                         </span>
                     </div>
                     <div className="bottom-icons-left">
-                        <img className="filter-icon" src={Filter} alt="filter icon" />
+                        <img className="Export-icon" src={Export} alt="Export icon" />
                         <img className="upload-icon" src={Filter} alt="filter icon" />
                     </div>
 
