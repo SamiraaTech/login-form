@@ -94,7 +94,7 @@ body {
                     width: 1.5rem;
                     height: 1.5rem;
                     display: inline-block;
-
+                    opacity: .5;
                     img {
                         width: 100%;
                         height: auto;
@@ -116,7 +116,7 @@ body {
                 border-radius: .6rem;
                 margin-right: 14px;
                 padding: .5rem 1rem;
-
+                background-color: #fff;
                 .para-form {
                     display: flex;
                     flex-direction: column;
@@ -189,10 +189,11 @@ body {
                 border: 2px solid $main-color;
                 border-radius: .6rem;
                 padding: 0.5rem 1rem;
+                background-color: #fff;
                 .bottom-container {
                     display: flex;
                     justify-content: space-between;
-                   
+                    align-items: center;
                     .charachters-right {
                         display: flex;
                         flex-direction: column;
@@ -223,18 +224,22 @@ body {
     }
 }
 
-/*--------------responsive---------------*/
+/*---------------responsive----------------*/
 
-@media only screen and (max-width: 600px) {
-    .paraphrase-boxes {
-        flex-direction: column;
-    }
-
-    header {
-        .paraphrase-boxes {
-            .left-box {
-                width: 100%;
-                padding: 0;
+@media only screen and (max-width: 609px) {
+    body {
+        .header {
+            .paraphrase-boxes {
+                display: flex;
+                flex-direction: column;
+                .left-box {
+                    width: 100%;
+                    border: 0px;
+                }
+                .right-box {
+                    width: 100%;
+                    border: 0px;
+                }
             }
         }
     }

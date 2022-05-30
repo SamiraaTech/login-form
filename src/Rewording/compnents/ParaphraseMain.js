@@ -1,6 +1,7 @@
 import React from 'react';
 import Filter from '../img/filter.svg';
 import Export from '../img/export.svg';
+import Upload from '../img/upload_icon.svg';
 
 const ParaphraseMain = () => {
     return (
@@ -25,7 +26,7 @@ const ParaphraseMain = () => {
 
                         <div className="bottom-icons-right">
                             <img className="filter-icon" src={Filter} alt="filter icon" />
-                            <img className="upload-icon" src={Filter} alt="filter icon" />
+                            <img className="upload-icon" src={Upload} alt="filter icon" />
                         </div>
                     </div>
                 </form>
