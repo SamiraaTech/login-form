@@ -19,13 +19,15 @@ $footer-color: #6573CF;
                 background-color: $header-color;
                 .rounded-profile {
                     position: absolute;
+                    width: 4rem;
+                    height: 4rem;
                     left: 50%;
                     transform: translateX(-50%);
                     top: 2rem;
                     bottom: 0;
                     .profile-img {
-                        width: 4rem;
-                        height: 4rem;
+                        width: 100%;
+                        height: auto;
                         border-radius: 50%;
                         border: 3px solid #fff;
                     }
@@ -38,7 +40,7 @@ $footer-color: #6573CF;
             .contact_Name {
                 text-align: center;
                 position: relative;
-                margin-top: 4rem;
+                margin-top: 2.5rem;
                 &::after {
                     content: "";
                     display: inline-block;
@@ -68,13 +70,13 @@ $footer-color: #6573CF;
                     li {
                         padding: 0.3rem 0.5rem;
                         transition: all 0.5s ease;
-                        svg {
+                        .svg-icon {
                             color: $header-color;
                             width: 1.5rem;
-                        }
+                        }     
                     &:hover {
                        background-color: $header-color;
-                       svg {
+                       .svg-icon {
                            color:#fff;
                         }
                     }
@@ -106,7 +108,8 @@ $footer-color: #6573CF;
                 li {
                     padding: .2rem 0.5rem 0;
                     a {
-                        svg {
+                        display: inline-block;
+                        img {
                             width: 1.1rem;
                             color: #fff;
                         }
