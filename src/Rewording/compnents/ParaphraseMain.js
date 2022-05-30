@@ -22,7 +22,7 @@ const ParaphraseMain = () => {
 
                         <button className="btn-para" type="submit" value="submit">Paraphrase</button>
 
-                        <div className="bottom-icons">
+                        <div className="bottom-icons-right">
                             <img className="filter-icon" src={Filter} alt="filter icon" />
                             <img className="upload-icon" src={Filter} alt="filter icon" />
                         </div>
@@ -30,18 +30,22 @@ const ParaphraseMain = () => {
                 </form>
             </div>
             <div className="right-box">
-                <div className="charachters-right">
-                    <span className="numbers">
-                        0/10000
-                    </span>
-                    <span className="char-txt">
-                        charachters
-                    </span>
+                <div className="bottom-container">
+                    <div className="charachters-right">
+                        <span className="numbers">
+                            0/10000
+                        </span>
+                        <span className="char-txt">
+                            charachters
+                        </span>
+                    </div>
+                    <div className="bottom-icons-left">
+                        <img className="filter-icon" src={Filter} alt="filter icon" />
+                        <img className="upload-icon" src={Filter} alt="filter icon" />
+                    </div>
+
                 </div>
-                <div className="bottom-icons">
-                            <img className="filter-icon" src={Filter} alt="filter icon" />
-                            <img className="upload-icon" src={Filter} alt="filter icon" />
-                </div>
+
             </div>
         </section>
     )
