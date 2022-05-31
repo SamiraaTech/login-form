@@ -4,6 +4,7 @@ import ParaphraseTop from './compnents/ParaphraseTop';
 import ParaphraseMain from './compnents/ParaphraseMain';
 
 import './style.scss';
+import './responsive.scss'
 
 const RewordingPage = () => {
 
