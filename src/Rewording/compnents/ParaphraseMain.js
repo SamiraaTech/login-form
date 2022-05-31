@@ -9,7 +9,8 @@ const ParaphraseMain = () => {
             <div className="left-box">
                 <form className="para-form">
                     <div className="para-txt">
-                        <textarea id="paraphrase-txt" placeholder="Rewording is going to paraphrase your text by writing or posting something here, only you need is hit the paraphrase button." >
+                        <textarea id="paraphrase-txt"
+                         placeholder="Rewording is going to paraphrase your text by writing or posting something here, only you need is hit the paraphrase button.">
                         </textarea>
                     </div>
                     <div className="bottom-content">
