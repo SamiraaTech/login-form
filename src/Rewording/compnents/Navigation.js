@@ -12,7 +12,8 @@ const Navigation = () => {
             </h1>
             <nav className="navigation">
                 <button className="hamburger"
-                    onClick={ () => {
+                    onClick={ (e) => {
+                        e.preventDefault();
                         setIsNavExpanded(!isNavExpanded);
                     }}>
                     <img src={hamburger} alt="menu" />
@@ -20,9 +21,11 @@ const Navigation = () => {
                 <div className={`navigation-menu ${isNavExpanded ? "expanded" : null}`} >
                     <ul className="menu-list">
                         {items.map((item) => {
-                            return <li>
-                                <a href={item.url}>{item.name}</a>
-                            </li>
+                            return (
+                                <li key={items.id}>
+                                    <a href={item.url}>{item.name}</a>
+                                </li>
+                            );
                         })}
                     </ul>
                 </div>

@@ -9,7 +9,7 @@ const ParaphraseTop = () => {
                 <label htmlFor="dropdown">Density of paraphrasing:</label>
                 <select id="dropdown" name="dropdown">
                     {options.map((item) => {
-                        return <option value={item.value}>{item.name}</option>
+                        return <option key={options.id} value={item.value}>{item.name}</option>
                     })}
                 </select>
             </div>

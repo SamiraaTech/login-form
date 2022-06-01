@@ -2,6 +2,12 @@ $main-color : #9B6DB8;
 $gray-color : rgb(188, 188, 188);
 $text-color : rgb(63, 63, 63);
 
+@mixin theme($theme: #fff) {
+    background: $theme;
+    box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.30);
+    -webkit-box-shadow : 0px 0px 9px 1px rgba(0, 0, 0, 0.30);
+    -moz-box-shadow : 0px 0px 9px 1px rgba(0, 0, 0, 0.30);
+}
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -92,10 +98,7 @@ body {
             border: 2px solid $main-color;
             border-radius: .6rem;
             padding: .9rem 1.2rem;
-            background-color: #fff;
-            -webkit-box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.30);
-            -moz-box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.30);
-            box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.30);
+            @include theme;
 
             .left-side {
                 #dropdown {
@@ -138,7 +141,6 @@ body {
             margin-top: 14px;
             height: 60vh;
 
-            // background-color: green;
             .left-box {
                 width: 50%;
                 height: calc(100vh - 270px);
@@ -146,11 +148,7 @@ body {
                 border-radius: .6rem;
                 margin-right: 14px;
                 padding: .5rem 1rem;
-                background-color: #fff;
-                -webkit-box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.30);
-                -moz-box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.30);
-                box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.30);
-
+                @include theme;
                 .para-form {
                     display: flex;
                     flex-direction: column;
@@ -229,51 +227,51 @@ body {
             .right-box {
                 display: flex;
                 flex-direction: column;
-                justify-content: flex-end;
+                justify-content: space-between;
                 width: 50%;
                 height: calc(100vh - 270px);
                 border: 2px solid $main-color;
                 border-radius: .6rem;
                 padding: 0.5rem 1rem;
-                background-color: #fff;
-                -webkit-box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.30);
-                -moz-box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.30);
-                box-shadow: 0px 0px 9px 1px rgba(0, 0, 0, 0.30);
-
-                .bottom-container {
-                    display: flex;
-                    justify-content: space-between;
-                    align-items: center;
-
-                    .charachters-right {
-                        display: flex;
-                        flex-direction: column;
-                        font-size: 11px;
-                        color: $text-color;
-                        font-weight: 600;
+                @include theme;
+                    .message-right {
+                        word-wrap: break-word
                     }
-
-                    .bottom-icons-left {
+                    .bottom-container {     
                         display: flex;
-                        width: 2rem;
-                        height: 1rem;
-
-                        img {
-                            display: inline-block;
-                            width: 100%;
-                            height: auto;
-                            opacity: .4;
-
+                        justify-content: space-between;
+                        .charachters-right {
+                            display: flex;
+                            flex-direction: column;
+                            font-size: 11px;
+                            color: $text-color;
+                            font-weight: 600;
                         }
-
-                        .upload-icon {
-                            padding-left: 5px;
+    
+                        .bottom-icons-left {
+                            display: flex;
+                            align-self: center;
+                            width: 2rem;
+                            height: 1rem;
+    
+                            img {
+                                display: inline-block;
+                                width: 100%;
+                                height: auto;
+                                opacity: .4;
+    
+                            }
+    
+                            .upload-icon {
+                                padding-left: 5px;
+                            }
                         }
                     }
                 }
+                
 
             }
         }
     }
-}
+
 

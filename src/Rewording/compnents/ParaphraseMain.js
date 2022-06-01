@@ -1,16 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Filter from '../img/filter.svg';
 import Export from '../img/export.svg';
 import Upload from '../img/upload_icon.svg';
 
 const ParaphraseMain = () => {
+    const [messageLeft, setMessageLeft] = useState('');
+    const [messageRight, setMessageRight] = useState('');
+
+
+    const handleClick = e => {
+        e.preventDefault();
+        setMessageRight(messageLeft);
+    }
+
     return (
         <section className="paraphrase-boxes">
             <div className="left-box">
-                <form className="para-form">
+                <form className="para-form" onSubmit={handleClick}>
                     <div className="para-txt">
-                        <textarea id="paraphrase-txt"
-                         placeholder="Rewording is going to paraphrase your text by writing or posting something here, only you need is hit the paraphrase button.">
+                        <textarea id="paraphrase-txt" onChange={(e) => setMessageLeft(e.target.value)}
+                            placeholder="Rewording is going to paraphrase your text by writing or posting something here, only you need is hit the paraphrase button." >
                         </textarea>
                     </div>
                     <div className="bottom-content">
@@ -33,6 +42,9 @@ const ParaphraseMain = () => {
                 </form>
             </div>
             <div className="right-box">
+                <section className="message-right">
+                    {messageRight}
+                </section>
                 <div className="bottom-container">
                     <div className="charachters-right">
                         <span className="numbers">
