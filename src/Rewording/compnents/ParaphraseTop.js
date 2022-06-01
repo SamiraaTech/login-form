@@ -15,9 +15,9 @@ const ParaphraseTop = ({ handleRemove }) => {
                 </select>
             </div>
             <div className="right-side">
-                <span className="trash">
-                    <img src={Trash} alt="remove btn" onClick={handleRemove}/>
-                </span>
+                <button className="trash" onClick={handleRemove}>
+                    <img src={Trash} alt="remove btn" />
+                </button>
             </div>
         </div>
     )
