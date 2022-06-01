@@ -51,6 +51,25 @@
                         .expanded {
                             .menu-list {
                                 display: block;
+                                position: absolute;
+                                top: 35px;
+                                left: 0;
+                                flex-direction: column;
+                                width: 100%;
+                                background-color: white;
+                                z-index: 1;
+                                height: 100%;
+                                li {
+                                    text-align: center;
+                                    margin: 0;
+                                    padding: 1.5rem 0;
+                                    a {
+                                        width: 100%;
+                                    }
+                                    &:hover {
+                                        background-color: #eee;
+                                    }
+                                }
                             }
                         }
                     }
