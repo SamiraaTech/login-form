@@ -5,6 +5,7 @@ import { items } from './constants/content';
 
 const Navigation = () => {
     const [isNavExpanded, setIsNavExpanded] = useState(false);
+    
     return (
         <div className="header-top">
             <h1>
@@ -22,7 +23,7 @@ const Navigation = () => {
                     <ul className="menu-list">
                         {items.map((item) => {
                             return (
-                                <li key={items.id}>
+                                <li key={item.id}>
                                     <a href={item.url}>{item.name}</a>
                                 </li>
                             );

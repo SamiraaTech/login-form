@@ -1,24 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Filter from '../img/filter.svg';
 import Export from '../img/export.svg';
 import Upload from '../img/upload_icon.svg';
 
-const ParaphraseMain = () => {
-    const [messageLeft, setMessageLeft] = useState('');
-    const [messageRight, setMessageRight] = useState('');
-
-
-    const handleClick = e => {
-        e.preventDefault();
-        setMessageRight(messageLeft);
-    }
-
+const ParaphraseMain = ({ messageLeft,setMessageLeft, messageRight, handleClick }) => {    
     return (
         <section className="paraphrase-boxes">
             <div className="left-box">
                 <form className="para-form" onSubmit={handleClick}>
                     <div className="para-txt">
-                        <textarea id="paraphrase-txt" onChange={(e) => setMessageLeft(e.target.value)}
+                        <textarea id="paraphrase-txt"
+                        value={messageLeft} onChange={(e) => setMessageLeft(e.target.value)}
                             placeholder="Rewording is going to paraphrase your text by writing or posting something here, only you need is hit the paraphrase button." >
                         </textarea>
                     </div>
