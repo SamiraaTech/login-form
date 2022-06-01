@@ -35,7 +35,7 @@ const ParaphraseMain = ({ messageLeft,setMessageLeft, messageRight, handleClick 
             </div>
             <div className="right-box">
                 <section className="message-right">
-                    {messageRight}
+                    <p className="moved-txt">{messageRight}</p>
                 </section>
                 <div className="bottom-container">
                     <div className="charachters-right">
