@@ -1,16 +1,17 @@
 import React from 'react';
-// import LoginForm from './LoginForm';
+import LoginForm from './LoginForm';
 // import ProfileCard from './profileCard';
-import RewordingPage from './Rewording/RewordingPage';
+// import RewordingPage from './Rewording/RewordingPage';
 
-// import './styles.scss';
+
 
 const App = () => {
     return (
     <main className="header">
-        <RewordingPage />
+        {/* <RewordingPage /> */}
         {/* <ProfileCard /> */}
        {/* <LoginForm /> */}
+       <p className="bg-red-300 text-lg">Hello World!!!!!!!!</p>
     </main>
     );
 }
