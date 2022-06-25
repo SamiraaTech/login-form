@@ -10,8 +10,8 @@ const App = () => {
     <main className="header">
         {/* <RewordingPage /> */}
         {/* <ProfileCard /> */}
-       {/* <LoginForm /> */}
-       <p className="bg-red-300 text-lg">Hello World!!!!!!!!</p>
+       <LoginForm />
+       <p className="text-3xl font-bold underline">Hello World!!</p>
     </main>
     );
 }
